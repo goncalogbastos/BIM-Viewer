@@ -1,0 +1,16 @@
+{
+  "name": "bim-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model-list.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ifc": "^1.1.1",
+    "three": "^0.142.0"
+  }
+}
