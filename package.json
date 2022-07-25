@@ -12,5 +12,6 @@
   "dependencies": {
     "ifc": "^1.1.1",
     "three": "^0.142.0"
-  }
+  },
+  "devDependencies": {}
 }
