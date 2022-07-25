@@ -1,4 +1,4 @@
-import {projects} from "/src/projects.js";
+import {projects} from "./projects.js";
 
 // Get the current project ID from the URL parameter
 const currentURL = window.location.href;

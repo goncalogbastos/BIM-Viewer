@@ -5,7 +5,7 @@ const projectContainer = document.getElementById("projects-container");
 const projectCards = Array.from(projectContainer.children);
 
 const templateProjectCard = projectCards[0];
-const baseURL = "/model-viewer.html";
+const baseURL = "./model-viewer.html";
 
 
 for(let project of projects){
