@@ -2,7 +2,7 @@
   "name": "bim-viewer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w"
@@ -10,12 +10,12 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "ifc": "^1.1.1",
-    "three": "^0.142.0"
-  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
     "rollup": "^2.77.1"
+  },
+  "dependencies": {
+    "three": "^0.135.0",
+    "web-ifc-viewer": "^1.0.207"
   }
 }
