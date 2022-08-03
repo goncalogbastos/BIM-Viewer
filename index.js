@@ -1,5 +1,9 @@
 import {projects} from "./projects.js";
 
+import{
+    Scene
+} from "three";
+
 // Get all cards
 const projectContainer = document.getElementById("projects-container");
 const projectCards = Array.from(projectContainer.children);

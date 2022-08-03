@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Viewer</title>
-    <link rel="icon" type="image/x-icon" href="../static/cobapt-h.png">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./static/cobapt-h.png">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="hide-overflow">
+    <canvas id="three-canvas"></canvas>
+<!--     <div id="loader-container">
+        <svg class="loading-circle" viewBox="25 25 50 50">
+            <circle r="20" cy="50" cx="50"></circle>
+        </svg>
+        <p id="progress-text">Loading...</p>
+    </div> -->
 
     <div class="simple-card-container">
-        <div class="simple-card">Example model</div>
+        <div id="project-name" class="simple-card">Example model</div>
     </div>
 
     <div class="simple-card-container bottom">
@@ -37,7 +45,7 @@
         </div>
     </div>
 
-    <iframe id="model-iframe" src="https://ifcjs.github.io/ifcjs-crash-course/sample-apps/01/" frameborder="0"></iframe>
+    <!-- <iframe id="model-iframe" src="https://ifcjs.github.io/ifcjs-crash-course/sample-apps/01/" frameborder="0"></iframe> -->
     <script type="module" src="./model-viewer.js"></script>
 </body>
 </html>
