@@ -192,6 +192,7 @@ iframe {
     background: var(--translucent-white);
     box-shadow: var(--normal-shadow);
     backdrop-filter: var(--blur-filter);
+    text-align: center;
    }
 
 .loading-circle {

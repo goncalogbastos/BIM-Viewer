@@ -50,7 +50,7 @@ import CameraControls from "./node_modules/camera-controls/dist/camera-controls.
 const scene = new Scene();
 const canvas = document.getElementById('three-canvas');
 const axes = new AxesHelper();
-const grid = new GridHelper();
+const grid = new GridHelper(25,25);
 
 axes.material.depthTest = false;
 grid.renderOrder = 1;
@@ -75,10 +75,11 @@ renderer.setClearColor(0x3E3E3E,1);
 
 // Define the Lights
 const light = new DirectionalLight();
-const ambientLight = new AmbientLight();
+const ambientLight = new AmbientLight(0xffffff,1);
 
 light.position.set(3,3,3).normalize();
 scene.add(light);
+scene.add(ambientLight);
 
 // Define the Responsivity
 window.addEventListener("resize", () => {
@@ -110,7 +111,7 @@ const clock = new Clock();
 const cameraControls = new CameraControls(camera,canvas);
 
 cameraControls.dollyToCursor = true;
-cameraControls.setLookAt(10,10,10,0,0,0);
+cameraControls.setLookAt(25,15,25,0,0,0);
 
 // Define the Animation
 function animate() {
